@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Conference 2024 - festaura</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fbf7ff;
+      --muted:#6a6a78;
+      --purple:#7b4bff;
+      --soft:#efe9f9;
+      --card:#ffffff;
+      --shadow: 0 8px 18px rgba(25,20,50,0.06);
+      --radius: 10px;
+    }
+    *{box-sizing:border-box}
+    html,body{min-height:100%;margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#17141a;background:linear-gradient(180deg,#fbf7ff 0%, #f6eff9 100%)}
+
+    header{position:sticky;top:0;background:rgba(255,255,255,0.9);backdrop-filter: blur(4px);box-shadow:0 1px 0 rgba(0,0,0,0.04);z-index:30}
+    .nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--purple),#c28bff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .brand h1{font-size:18px;margin:0}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;font-weight:500}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{padding:10px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block;text-align:center}
+    .btn.secondary{background:#fff;border:1px solid #eee;color:inherit}
+    .btn.primary{background:var(--purple);color:#fff;box-shadow:0 6px 18px rgba(123,75,255,0.18)}
+
+    main{max-width:1200px;margin:40px auto;display:grid;grid-template-columns:2fr 1fr;gap:30px;padding:20px}
+    .content{background:var(--card);border-radius:12px;padding:28px;box-shadow:var(--shadow)}
+    .media{height:300px;background-size:cover;background-position:center;border-radius:10px;margin-bottom:20px}
+    .title{font-size:32px;font-weight:800;margin:0 0 10px}
+    .tag{background:rgba(20,15,30,0.08);padding:6px 8px;border-radius:8px;font-size:13px; font-weight: 600; color: var(--muted);display:inline-block}
+
+    .sidebar{display:flex;flex-direction:column;gap:20px}
+    .sidebar-card{background:var(--card);border-radius:12px;padding:20px;box-shadow:var(--shadow)}
+    .sidebar-card h3{margin:0 0 12px 0;font-size:18px}
+    .info-row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #f0f0f0}
+    .info-row:last-child{border:0}
+    .info-row .label{color:var(--muted);font-weight:500;font-size:14px}
+    .info-row .value{font-weight:600;color:#111}
+
+    .organizer-card{display:flex;gap:12px;align-items:center}
+    .organizer-logo{width:44px;height:44px;min-width:44px;border-radius:8px;background:var(--soft);color:var(--purple);font-weight:700;display:flex;align-items:center;justify-content:center}
+    .organizer-info p{margin:0;font-size:14px;color:var(--muted)}
+
+    .modal{position:fixed;inset:0;background:rgba(20,10,30,0.4);backdrop-filter:blur(4px);z-index:100;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s}
+    .modal.active{opacity:1;pointer-events:auto}
+    .modal-content{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.1);max-width:400px;width:90vw}
+
+    footer{margin-top:60px;background:linear-gradient(180deg, rgba(250,248,252,1) 0%, rgba(244,241,247,1) 100%);padding:40px}
+    .footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:30px}
+    .footer-grid h4{margin:0 0 10px 0}
+    .small{color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">F</div>
+        <h1>festaura</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="#">Clubs</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a class="btn secondary" href="login.html">Login</a>
+        <a class="btn primary" href="login.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="media" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=80');"></div>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
+        <div class="tag">Tech</div>
+      </div>
+      <h2 class="title">Tech Conference 2024</h2>
+      <p style="color:var(--muted);line-height:1.6">Join us for the annual Tech Conference, a full-day event dedicated to exploring the latest trends in artificial intelligence, web development, and cybersecurity. Connect with industry experts, participate in hands-on workshops, and network with fellow students.</p>
+
+      <h3 style="margin-top:28px">About this Event</h3>
+      <p style="color:var(--muted);line-height:1.6">This event is open to all students, regardless of their major. Our goal is to foster innovation and provide a platform for students to learn from leaders in the tech industry. The conference will feature keynote speakers, technical sessions, and a project showcase.</p>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>Event Details</h3>
+        <div class="info-row">
+          <span class="label">Date</span>
+          <span class="value">October 12, 2024</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Time</span>
+          <span class="value">9:00 AM - 5:00 PM</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Location</span>
+          <span class="value">Main Auditorium</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Price</span>
+          <span class="value">Free</span>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Organized By</h3>
+        <div class="organizer-card">
+          <div class="organizer-logo">CS</div>
+          <div class="organizer-info">
+            <strong>CS Society</strong>
+            <p>Computer Science Dept.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card" id="actionButtons">
+        <button class="btn primary" style="width:100%" id="registerBtn">Register for this Event</button>
+      </div>
+
+      <div class="sidebar-card" id="registeredSection" style="display:none;background:var(--soft);text-align:center">
+        <h3 style="color:var(--purple)">✓ You are registered!</h3>
+        <p class="small" style="color:var(--muted);margin:0">We've sent a confirmation to your email.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px">
+          <div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--purple),#b07bff);display:flex;align-items:center;justify-content:center;color:#fff">F</div>
+          <strong>festaura</strong>
+        </div>
+        <div class="small">Your one-stop platform for all campus happenings.</div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="small">Home<br/>Events<br/>Clubs</div>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <div class="small">Terms of Service<br/>Privacy Policy<br/>Contact Us</div>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div style="display:flex;gap:12px;margin-top:12px;opacity:0.9">FB · TW · IG · IN</div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:30px auto 0;color:var(--muted);text-align:center;font-size:14px">© 2025 festaura. All rights reserved.</div>
+  </footer>
+
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <h3 style="margin:0">Login Required</h3>
+        <button onclick="closeModal()" style="border:0;background:transparent;font-size:24px;cursor:pointer">&times;</button>
+      </div>
+      <p class="small" style="color:var(--muted)">You must be logged in to register for an event.</p>
+      <a href="login.html" class="btn primary" style="width:100%;margin-top:12px">Go to Login</a>
+    </div>
+  </div>
+
+  <script>
+    let isLoggedIn = false;
+    const registerBtn = document.getElementById('registerBtn');
+    const loginModal = document.getElementById('loginModal');
+    const actionButtons = document.getElementById('actionButtons');
+    const registeredSection = document.getElementById('registeredSection');
+
+    registerBtn.addEventListener('click', () => {
+      if(isLoggedIn) {
+        actionButtons.style.display = 'none';
+        registeredSection.style.display = 'block';
+        alert('Successfully registered for Tech Conference 2024!');
+      } else {
+        loginModal.classList.add('active');
+      }
+    });
+
+    function closeModal() {
+      loginModal.classList.remove('active');
+    }
+    loginModal.addEventListener('click', (e) => {
+      if(e.target === loginModal) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
