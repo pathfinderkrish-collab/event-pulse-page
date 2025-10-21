@@ -1,0 +1,212 @@
+ 
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>festaura — Admin Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#f6f0f8;
+    --card:#ffffff;
+    --muted:#9b8fa9;
+    --accent:#7b4bff; /* primary purple */
+    --accent-2:#7e52f7;
+    --input-bg:#f3eefe;
+    --pill-border:#efe9f6;
+    --shadow: 0 10px 30px rgba(120,80,170,0.08);
+    --radius:12px;
+  }
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:"Poppins",system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:linear-gradient(180deg, rgba(250,246,252,1) 0%, rgba(245,240,248,1) 100%);
+    background-color:var(--bg);
+    color:#222;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:48px 24px;
+  }
+
+  .wrap{
+    width:420px;
+    max-width:92vw;
+    text-align:center;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:18px;
+  }
+  .logo{
+    width:48px;height:48px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(125,80,200,0.12), inset 0 -6px 10px rgba(255,255,255,0.06);
+  }
+  .logo svg{filter:drop-shadow(0 2px 6px rgba(120,60,200,0.12));}
+  .brand h1{
+    margin:0;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:0.2px;
+  }
+
+  .card{
+    background:var(--card);
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    padding:18px;
+    overflow:hidden;
+    border:1px solid rgba(130,100,180,0.04);
+  }
+
+  .content{
+    text-align:left;
+    padding:8px 6px 18px;
+  }
+
+  .title{
+    font-size:22px;
+    font-weight:700;
+    margin:6px 6px 6px 6px;
+  }
+  .subtitle{
+    margin:0 6px 18px 6px;
+    color:#85739b;
+    font-size:13px;
+  }
+
+  label.field{
+    display:block;
+    margin:12px 6px 6px 6px;
+    font-size:13px;
+    color:#4b3f5e;
+    font-weight:600;
+  }
+
+  .input{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:8px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"]{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+    border:1px solid rgba(120,90,160,0.08);
+    background:var(--input-bg);
+    font-size:14px;
+    color:#2f2540;
+    box-shadow: 0 2px 0 rgba(255,255,255,0.6) inset;
+  }
+
+  .small-link{
+    display:block;
+    text-align:right;
+    margin-top:8px;
+    font-size:13px;
+    color:var(--accent-2);
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  .btn{
+    display:inline-block;
+    width:100%;
+    padding:12px 16px;
+    border-radius:10px;
+    background:linear-gradient(90deg,var(--accent),var(--accent-2));
+    color:white;
+    border:none;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:14px;
+    box-shadow: 0 6px 18px rgba(124,80,240,0.18);
+  }
+
+  .pw-wrap{position:relative}
+  .eye-btn{
+    position:absolute;
+    right:8px;
+    top:50%;
+    transform:translateY(-50%);
+    width:34px;height:34px;
+    border-radius:8px;
+    border:1px solid rgba(120,90,160,0.08);
+    background:transparent;
+    display:flex;
+    align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+
+  .card-inner{padding:8px 12px 18px;}
+  @media (max-width:520px){ .wrap{width:94vw} .brand h1{font-size:18px} }
+</style>
+</head>
+<body>
+
+<div class="wrap" role="main" aria-labelledby="brandTitle">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 21h18" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 10v11" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 7v14" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 4v17" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 12v9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1 id="brandTitle">festaura</h1>
+  </div>
+
+  <div class="card" aria-live="polite">
+    <div class="card-inner">
+<form action="action.php" method="POST">
+      <section id="panel-login" class="content" role="tabpanel">
+        <div class="title">Administrator Login</div>
+        <div class="subtitle">Please enter your credentials to manage events.</div>
+
+        <label class="field">Email</label>
+        <div class="input">
+          <input type="email" name="email" id="login-email" placeholder="you@college.edu" autocomplete="username" required>
+        </div>
+
+        <label class="field">Password</label>
+        <div class="input pw-wrap">
+
+
+          <input type="password" name="password" id="login-password" placeholder="••••••••" autocomplete="current-password" required>
+          
+
+        </div>
+
+       
+
+        <button class="btn" id="loginBtn" type="submit">Login</button>
+      </section>
+</form>
+<a href="index.php" style="text-decoration:none;color:#888">back to home</a>
+    </div>
+  </div>
+</div>
+
+ 
+</body>
+</html>
+
