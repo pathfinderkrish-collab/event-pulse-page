@@ -1,4 +1,4 @@
-# Festaura — NIT Kurukshetra
+# 🎉 Festaura — NIT Kurukshetra
 
 > A full-stack event management platform developed for **EXCALIBUR 2025**.  
 > This project streamlines the management of campus fests, workshops, and event registrations in one unified system.
@@ -25,3 +25,14 @@
 | **Hosting** | [InfinityFree](https://www.infinityfree.com/) |
 
 ---
+
+## Project Links
+
+| Resource | Link |
+|-----------|------|
+| **GitHub Repository** | [pathfinderkrish-collab/event-pulse-page](https://github.com/pathfinderkrish-collab/event-pulse-page) |
+| **Live Website** | [festaura.gt.tc](https://festaura.gt.tc) |
+
+---
+
+✨ *Developed with teamwork, creativity, and code for EXCALIBUR 2025 @ NIT Kurukshetra.*
