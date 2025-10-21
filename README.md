@@ -16,5 +16,11 @@
 
 ---
 
+## Tech Stack
+---
+|  Frontend                    |   HTML , CSS , JS                   |
+|  Backend                    |   php , MySql                 |
+|  Hosting                   |  https://www.infinityfree.com/              |
 
+---
 
