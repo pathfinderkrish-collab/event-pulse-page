@@ -1,7 +1,7 @@
 # Festaura — NIT Kurukshetra
 
 > A full-stack event management platform developed for **EXCALIBUR 2025**.  
-> Our project helps manage campus fests, workshops, and registrations in one streamlined system.
+> This project streamlines the management of campus fests, workshops, and event registrations in one unified system.
 
 ---
 
@@ -9,18 +9,19 @@
 
 | Name | Role | Contribution |
 |------|------|---------------|
-| Muskan	| Frontend Developer	| Developed static HTML/CSS/JS pages and UI layouts |
-| Astha Gautam | Frontend Developer | 	Contributed to design flow, mockups, and visual assets |
-| Yatharth Chaudhary | Frontend Developer	| Built frontend pages, testing, and debugging |
-| Akshat Meena	| Full-Stack Developer | Developed backend (PHP/MySQL), integrated frontend with dynamic features, and ensured overall system functionality |
+| **Muskan** | Frontend Developer | Developed static HTML/CSS/JS pages and UI layouts |
+| **Astha Gautam** | Frontend Developer | Designed mockups, contributed to UI flow, and created visual assets |
+| **Yatharth Chaudhary** | Frontend Developer | Built frontend pages, handled testing, and fixed UI bugs |
+| **Akshat Meena** | Full-Stack Developer | Developed backend (PHP/MySQL), integrated frontend with dynamic features, and ensured full system functionality |
 
 ---
 
 ## Tech Stack
----
-|  Frontend                    |   HTML , CSS , JS                   |
-|  Backend                    |   php , MySql                 |
-|  Hosting                   |  https://www.infinityfree.com/              |
+
+| Category | Technologies / Tools |
+|-----------|----------------------|
+| **Frontend** | HTML, CSS, JavaScript |
+| **Backend** | PHP, MySQL |
+| **Hosting** | [InfinityFree](https://www.infinityfree.com/) |
 
 ---
-
